@@ -33,11 +33,10 @@ export default function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Projects we've done</h1>
+            <h1 className="h2 mb-4">Project Portfolio</h1>
             <p className="text-xl text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.
+              Our Project Portfolio features the MVPs we've created, reflecting
+              our dedication to meeting each client's specific needs
             </p>
           </div>
 
@@ -53,9 +52,8 @@ export default function Features() {
                   Here's a list of projects we've done
                 </h3>
                 <p className="text-xl text-gray-600">
-                  Explore our portfolio of completed projects, showcasing our
-                  commitment to delivering high-quality MVPs tailored to our
-                  client's unique needs and visions
+                  Check out our portfolio, showcasing high-quality MVPs crafted
+                  to meet our clients' unique needs and visions.
                 </p>
               </div>
               {/* Tabs buttons */}

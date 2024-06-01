@@ -64,7 +64,7 @@ export default function FeaturesBlocks() {
                 1. Vision
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Thoroughly understanding your vision, goals, and project requirements
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function FeaturesBlocks() {
                 2. Blueprinting
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Creating a structured plan with defined timelines and milestones
               </p>
             </div>
 
@@ -149,7 +149,7 @@ export default function FeaturesBlocks() {
                 3. Prototyping
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Designing detailed wireframes and prototypes with iterative feedback
               </p>
             </div>
 
@@ -192,7 +192,7 @@ export default function FeaturesBlocks() {
                 4. Coding
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Utilizing cutting-edge technology and agile methodologies for development
               </p>
             </div>
 
@@ -230,7 +230,7 @@ export default function FeaturesBlocks() {
                 5. Testing
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Testing thoroughly to make sure everything works perfectly
               </p>
             </div>
 
@@ -264,7 +264,7 @@ export default function FeaturesBlocks() {
                 6. Deployment
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Launching your MVP and supporting you all the way for market success
               </p>
             </div>
           </div>

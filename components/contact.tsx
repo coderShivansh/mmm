@@ -1,9 +1,14 @@
+'use client'
+export const metadata = {
+  title: 'Drittle tech Contact',
+  description: 'Contacts Page',
+}
+
+
+
 import { useState } from 'react';
 
-export const metadata = {
-    title: 'Contact MakeMyMvp',
-    description: 'Contact Page of MakeMyMvp',
-  }
+
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

@@ -1,6 +1,6 @@
-import VideoThumb from "@/public/images/hero-image.png";
 import ModalVideo from "@/components/modal-video";
-import Link from 'next/link'
+import Link from "next/link";
+import VideoThumb from "@/public/images/hero-image.png";
 
 export default function Hero() {
   return (
@@ -56,7 +56,8 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                We turn your ideas into market-ready MVPs in just 25 days with quality and speed.
+                We turn your ideas into market-ready MVPs in just 25 days with
+                quality and speed.
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -65,19 +66,20 @@ export default function Hero() {
               >
                 <div>
                   <Link
+                    href="https://calendly.com/codershivansh/30min"
+                    target="_blank"
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="https://calendly.com/codershivansh/30min" target="_blank"
                   >
                     Book a Call
                   </Link>
                 </div>
                 <div>
-                 
-
-                  <Link href="/contact" className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4">
+                  <Link
+                    href="/contact"
+                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+                  >
                     Contact Us
-                    </Link>
-                  
+                  </Link>
                 </div>
               </div>
             </div>

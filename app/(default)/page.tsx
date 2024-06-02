@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'MakeMyMvp Home',
-  description: 'Home Page',
+  description: 'Home Page for MakeMyMvp, a MVP building agency',
 }
 
 import Hero from '@/components/hero';

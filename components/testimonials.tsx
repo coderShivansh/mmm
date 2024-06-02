@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TestimonialImage from "@/public/images/testimonial.jpg";
+import TestimonialImage from "@/public/images/testimonial-template-male.png";
 
 export default function Testimonials() {
   return (
@@ -141,10 +141,9 @@ export default function Testimonials() {
                   />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
-                  “ I love MakeMyMvp and would recommend it to anyone who have
-                  idea for their project. Their expertise helped in making idea
-                  to reality and giving it a shape. Our Project is working so
-                  fine. “
+                  “I love MakeMyMvp and highly recommend it to anyone with a
+                  project idea. Their expertise turned our idea into reality and
+                  gave it shape. Our project is thriving“
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">
                   Neil Jayvardhan

@@ -1,6 +1,6 @@
 export const metadata = {
     title: 'MakeMyMvp Contact',
-    description: 'Contacts Page',
+    description: 'Contacts Page for MakeMyMvp, a MVP Building Agency',
   }
 import Contact from '@/components/contact';
 import Footer from '@/components/ui/footer';

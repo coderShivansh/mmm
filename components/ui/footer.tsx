@@ -1,4 +1,5 @@
 import Logo from "./logo";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -16,15 +17,16 @@ export default function Footer() {
                 href="#0"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
-                Terms
-              </a>{" "}
+                All rights reserved.
+              </a>
+              {/* {" "}
               ·{" "}
               <a
                 href="#0"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
                 Privacy Policy
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -37,7 +39,7 @@ export default function Footer() {
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Web Studio
+                  Website
                 </a>
               </li>
               <li className="mb-2">
@@ -45,7 +47,7 @@ export default function Footer() {
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  DynamicBox Flex
+                  Apps
                 </a>
               </li>
               <li className="mb-2">
@@ -53,7 +55,7 @@ export default function Footer() {
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Programming Forms
+                  UI/UX Design
                 </a>
               </li>
               <li className="mb-2">
@@ -61,7 +63,7 @@ export default function Footer() {
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Integrations
+                  API Integrations
                 </a>
               </li>
               <li className="mb-2">
@@ -69,7 +71,7 @@ export default function Footer() {
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Command-line
+                  Deployment
                 </a>
               </li>
             </ul>
@@ -87,14 +89,7 @@ export default function Footer() {
                   Documentation
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#0"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Tutorials & Guides
-                </a>
-              </li>
+
               <li className="mb-2">
                 <a
                   href="#0"
@@ -105,7 +100,8 @@ export default function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#0"
+                  href="mailto:contact@makemymvp.tech?subject=I Have A Query&body=Hi%20there,%0D%0A%0D%0AI%20need%20some%20help%20regarding%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]
+                  "
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Support Center
@@ -113,7 +109,8 @@ export default function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="https://www.jayandteam.com/" target="_blank"
+                  href="https://www.jayandteam.com/"
+                  target="_blank"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Partners
@@ -142,14 +139,14 @@ export default function Footer() {
                   About us
                 </a>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <a
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Company values
                 </a>
-              </li>
+              </li> */}
               <li className="mb-2">
                 <a
                   href="#0"
@@ -158,63 +155,35 @@ export default function Footer() {
                   Pricing
                 </a>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <a
                   href="#0"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Privacy Policy
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           {/* 5th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
+            <h6 className="text-gray-800 font-medium mb-2">Contacts</h6>
             <p className="text-sm text-gray-600 mb-4">
-              Get the latest news and articles to your inbox every month.
+              <Link href="mailto:contact@makemymvp.tech?subject=I Have A Query&body=Hi%20there,%0D%0A%0D%0AI%20have%20a%20query%20about%20your%20MVP%20development%20services.%20Could%20you%20please%20provide%20more%20information?%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]">
+               contact@makemymvp.tech
+              </Link>
             </p>
-            <form>
-              <div className="flex flex-wrap mb-4">
-                <div className="w-full">
-                  <label className="block text-sm sr-only" htmlFor="newsletter">
-                    Email
-                  </label>
-                  <div className="relative flex items-center max-w-xs">
-                    <input
-                      id="newsletter"
-                      type="email"
-                      className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm"
-                      placeholder="Your email"
-                      required
-                    />
-                    <button
-                      type="submit"
-                      className="absolute inset-0 left-auto"
-                      aria-label="Subscribe"
-                    >
-                      <span
-                        className="absolute inset-0 right-auto w-px -ml-px my-2 bg-gray-300"
-                        aria-hidden="true"
-                      ></span>
-                      <svg
-                        className="w-3 h-3 fill-current text-blue-600 mx-3 shrink-0"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                          fillRule="nonzero"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  {/* Success message */}
-                  {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
-                </div>
-              </div>
-            </form>
+            <p className="text-sm text-gray-600 mb-4">
+              <Link href="https://goo.gl/maps/nfg8zUErNg8DJssx9" target="_blank">
+               ITPL, Whitefield, Bangalore, 560066, India
+              </Link>
+            </p>
+            <p className="text-sm text-gray-600 mb-4" >
+              <Link href="https://wa.me/+918787288200" target="_blank">
+              Chat on WhatsApp 
+              </Link>
+            </p>
           </div>
         </div>
 

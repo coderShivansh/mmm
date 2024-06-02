@@ -3,8 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
-import FeaturesBg from "@/public/images/features-bg.png";
-import FeaturesElement from "@/public/images/features-element.png";
+import FeaturesBg from "@/public/images/features-image-01.png";
+import FeaturesBg2 from "@/public/images/features-image-02.png";
+import FeaturesBg3 from "@/public/images/features-image-03.png";
 
 export default function Features() {
   const [tab, setTab] = useState<number>(1);
@@ -49,11 +50,10 @@ export default function Features() {
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">
-                  Here's a list of projects we've done
+                  Some MVP Portfolio Highlights 
                 </h3>
                 <p className="text-xl text-gray-600">
-                  Check out our portfolio, showcasing high-quality MVPs crafted
-                  to meet our clients' unique needs and visions.
+                Check out our portfolio of high-quality MVPs, crafted to meet unique client needs and visions.
                 </p>
               </div>
               {/* Tabs buttons */}
@@ -72,11 +72,12 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem of project 1
+                      Built the ecosystem of a4medicines
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Initially MVP, now a top medical
+                      educational resource for clinicians
+                      worldwide, with 3000+ monthly users.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -103,11 +104,11 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem of project 2
+                      Here's the ecosystem of Krypto
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Started as an MVP, now India's finest cross-platform
+                      crypto platform.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -137,11 +138,10 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem of project 3
+                      Part of development of alistetechnologies
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Smart Home Solutions Controlled using App, Featured In Shark Tank India.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -184,6 +184,7 @@ export default function Features() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
+                    <a href="https://a4medicine.com/" target="_blank" rel="noopener noreferrer">
                       <Image
                         className="md:max-w-none mx-auto rounded"
                         src={FeaturesBg}
@@ -191,14 +192,7 @@ export default function Features() {
                         height="462"
                         alt="Features bg"
                       />
-                      <Image
-                        className="md:max-w-none absolute w-full left-0 transform animate-float"
-                        src={FeaturesElement}
-                        width={500}
-                        height="44"
-                        alt="Element"
-                        style={{ top: "30%" }}
-                      />
+                      </a>
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -216,21 +210,15 @@ export default function Features() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
+                    <a href="https://www.letskrypto.com/" target="_blank" rel="noopener noreferrer">
                       <Image
                         className="md:max-w-none mx-auto rounded"
-                        src={FeaturesBg}
+                        src={FeaturesBg2}
                         width={500}
                         height="462"
                         alt="Features bg"
                       />
-                      <Image
-                        className="md:max-w-none absolute w-full left-0 transform animate-float"
-                        src={FeaturesElement}
-                        width={500}
-                        height="44"
-                        alt="Element"
-                        style={{ top: "30%" }}
-                      />
+                    </a>
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -248,21 +236,15 @@ export default function Features() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
+                    <a href="https://www.alistetechnologies.com/" target="_blank" rel="noopener noreferrer">
                       <Image
                         className="md:max-w-none mx-auto rounded"
-                        src={FeaturesBg}
+                        src={FeaturesBg3}
                         width={500}
                         height="462"
                         alt="Features bg"
                       />
-                      <Image
-                        className="md:max-w-none absolute w-full left-0 transform animate-float"
-                        src={FeaturesElement}
-                        width={500}
-                        height="44"
-                        alt="Element"
-                        style={{ top: "30%" }}
-                      />
+                    </a>
                     </div>
                   </Transition>
                 </div>

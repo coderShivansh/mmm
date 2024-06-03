@@ -4,9 +4,6 @@ export const metadata = {
   description: 'A MVP Building Agency, MakeMyMvp Contacts Page',
 }
 import { useState } from 'react';
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
-
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -55,19 +52,17 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium py-1 text-gray-700">
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
               Phone Number (Optional)
             </label>
-            <PhoneInput
-              country={'us'}
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your Phone Number"
               value={phone}
-              onChange={phone => setPhone(phone)}
-              inputClass="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-              inputProps={{
-                name: 'phone',
-                required: true,
-                autoFocus: true,
-              }}
+              onChange={(e) => setPhone(e.target.value)}
+              className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             />
           </div>
           <div>

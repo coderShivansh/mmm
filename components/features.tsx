@@ -190,7 +190,7 @@ export default function Features() {
                         src={FeaturesBg}
                         width={500}
                         height="462"
-                        alt="Features bg"
+                        alt="a4medicine website screenshot"
                       />
                       </a>
                     </div>
@@ -216,7 +216,7 @@ export default function Features() {
                         src={FeaturesBg2}
                         width={500}
                         height="462"
-                        alt="Features bg"
+                        alt="letskrypto website screenshot"
                       />
                     </a>
                     </div>
@@ -242,7 +242,7 @@ export default function Features() {
                         src={FeaturesBg3}
                         width={500}
                         height="462"
-                        alt="Features bg"
+                        alt="alestetechnologies website screenshot"
                       />
                     </a>
                     </div>

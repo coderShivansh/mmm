@@ -174,7 +174,7 @@ export default function Footer() {
                contact@makemymvp.tech
               </Link>
             </p>
-            <p className="text-sm text-gray-600 mb-4">
+            {/* <p className="text-sm text-gray-600 mb-4">
               <Link href="https://goo.gl/maps/nfg8zUErNg8DJssx9" target="_blank">
                ITPL, Whitefield, Bangalore, 560066, India
               </Link>
@@ -183,7 +183,7 @@ export default function Footer() {
               <Link href="https://wa.me/+918787288200" target="_blank">
               Chat on WhatsApp 
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
 

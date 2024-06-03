@@ -1,8 +1,9 @@
-'use client'
+'use client';
 export const metadata = {
   title: 'MakeMyMvp Contacts',
   description: 'A MVP Building Agency, MakeMyMvp Contacts Page',
-}
+};
+
 import { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -12,20 +13,50 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [query, setQuery] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log({ name, email, phone, query });
+    setLoading(true); // Start loading
+    setSuccess(false); // Reset success state
+
+    try {
+      const response = await fetch('https://mmm-back.onrender.com/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, phone, query }),
+      });
+      if (response.ok) {
+        setSuccess(true);
+        setName('');
+        setEmail('');
+        setPhone('');
+        setQuery('');
+      } else {
+        console.error('Failed to save contact');
+      }
+    } catch (error) {
+      console.error('An error occurred', error);
+    } finally {
+      setLoading(false); // Stop loading
+    }
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center text-gray-900">Get in Touch</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-900">
+          Get in Touch
+        </h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
               What should we call you?
             </label>
             <input
@@ -40,7 +71,10 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Your Email
             </label>
             <input
@@ -55,13 +89,16 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium py-1 text-gray-700">
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium py-1 text-gray-700"
+            >
               Phone Number (Optional)
             </label>
             <PhoneInput
               country={'us'}
               value={phone}
-              onChange={phone => setPhone(phone)}
+              onChange={(phone) => setPhone(phone)}
               inputClass="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               inputProps={{
                 name: 'phone',
@@ -71,7 +108,10 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="query" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="query"
+              className="block text-sm font-medium text-gray-700"
+            >
               Your Query
             </label>
             <textarea
@@ -88,11 +128,17 @@ const Contact = () => {
             <button
               type="submit"
               className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+              disabled={loading} // Disable button when loading
             >
-              Submit
+              {loading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
         </form>
+        {success && (
+          <div className="text-center text-green-600">
+            Your query has been submitted successfully!
+          </div>
+        )}
       </div>
     </div>
   );
